@@ -30,6 +30,9 @@ The configuration files are read in the following order:
   10. ~/.zlogout
   11. /etc/zlogout
 
+#### Print files in order:
+```echo "\n\n-----------\n\nFile: /etc/zshenv\n"; cat /etc/zshenv; echo "\n\n-----------\n\nFile: ~/.zshenv\n"; cat ~/.zshenv; echo "\n\n-----------\n\nFile: /etc/zprofile\n"; cat /etc/zprofile; echo "\n\n-----------\n\nFile: ~/.zprofile\n"; cat ~/.zprofile; echo "\n\n-----------\n\nFile: /etc/zshrc\n"; cat /etc/zshrc; echo "\n\n-----------\n\nFile: ~/.zshrc\n"; cat ~/.zshrc; echo "\n\n-----------\n\nFile: ~/.zpreztorc\n"; cat ~/.zpreztorc; echo "\n\n-----------\n\nFile: /etc/zlogin\n"; cat /etc/zlogin; echo "\n\n-----------\n\nFile: ~/.zlogin\n"; cat ~/.zlogin; echo "\n\n-----------\n\nFile: ~/.zlogout\n"; cat ~/.zlogout; echo "\n\n-----------\n\nFile: /etc/zlogout\n"; cat /etc/zlogout;```
+
 ### zshenv
 
 This file is sourced by all instances of Zsh, and thus, it should be kept as
