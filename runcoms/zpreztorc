@@ -39,7 +39,6 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'git' \
-  'ssh' \
   'osx' \
   'syntax-highlighting' \
   'history-substring-search' \
