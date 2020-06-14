@@ -36,6 +36,7 @@ brew cask install \
   alfred \
   appcleaner \
   bartender \
+  discord \
   docker \
   epic-games \
   firefox \
