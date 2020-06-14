@@ -44,6 +44,7 @@ brew cask install \
   iterm2 \
   jetbrains-toolbox \
   keka \
+  omnifocus \
   steam \
   tunnelblick \
   vlc
