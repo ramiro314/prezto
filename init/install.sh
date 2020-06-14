@@ -10,26 +10,17 @@ cd
 
 cat << EOM
 ###############################################################################
-# Brew                                                                        #
+# Brew Setup                                                                  #
 ###############################################################################
 EOM
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew install \
-  bluetoothconnector \
-  git \
-  nvm \
-  pyenv \
-  vim \
-  yarn
-
-# Upstart requirements
-brew install \
-  exiftool \
-  libpq \
-  postgresql@9.6
-brew link --force postgresql@9.6
+cat << EOM
+###############################################################################
+# Brew Cask Install                                                           #
+###############################################################################
+EOM
 
 brew cask install \
   1password \
@@ -49,13 +40,39 @@ brew cask install \
   tunnelblick \
   vlc
 
-brew install docker-compose
+cat << EOM
+###############################################################################
+# Brew Install                                                                #
+###############################################################################
+EOM
+
+brew install \
+  bluetoothconnector \
+  docker-compose \
+  git \
+  nvm \
+  pyenv \
+  vim \
+  yarn
+
+cat << EOM
+###############################################################################
+# Upstart Brew Install                                                        #
+###############################################################################
+EOM
+
+# Upstart requirements
+brew install \
+  exiftool \
+  libpq \
+  postgresql@9.6
+brew link --force postgresql@9.6
 
 source "${ZDOTDIR:-$HOME}/.zshrc"
 
 cat << EOM
 ###############################################################################
-# Git                                                                         #
+# Git Config                                                                  #
 ###############################################################################
 EOM
 
@@ -66,7 +83,7 @@ git config --global core.excludesfile "${ZDOTDIR:-$HOME}/.zprezto/dotfiles/.giti
 
 cat << EOM
 ###############################################################################
-# Vim                                                                         #
+# Vim - Maximun Awsesome Install                                              #
 ###############################################################################
 EOM
 
@@ -77,7 +94,7 @@ cd
 
 cat << EOM
 ###############################################################################
-# RVM                                                                         #
+# RVM Install                                                                 #
 ###############################################################################
 EOM
 
@@ -85,7 +102,7 @@ curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 cat << EOM
 ###############################################################################
-# NVM                                                                         #
+# NVM Install                                                                 #
 ###############################################################################
 EOM
 
