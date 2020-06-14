@@ -37,11 +37,13 @@ brew cask install \
   appcleaner \
   bartender \
   docker \
+  epic-games \
   firefox \
   google-chrome \
   iterm2 \
   jetbrains-toolbox \
   keka \
+  steam \
   tunnelblick \
   vlc
 
