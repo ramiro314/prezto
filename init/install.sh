@@ -25,16 +25,21 @@ EOM
 brew cask install \
   1password \
   alfred \
+  anki \
   appcleaner \
   bartender \
   discord \
   docker \
   epic-games \
   firefox \
+  google-backup-and-sync \
   google-chrome \
   iterm2 \
   jetbrains-toolbox \
   keka \
+  microsoft-office \
+  nordvpn \
+  telegram \
   omnifocus \
   steam \
   tunnelblick \
@@ -67,6 +72,9 @@ brew install \
   libpq \
   postgresql@9.6
 brew link --force postgresql@9.6
+
+brew cask install \
+  lastpass
 
 source "${ZDOTDIR:-$HOME}/.zshrc"
 
