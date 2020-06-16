@@ -22,6 +22,6 @@ node_modules
 .sass-cache
 
 # Upstart Ruby Projects
-~/Dev/Upstart/upstart_web/.ruby-gemset
-~/Dev/Upstart/upstart_web/Procfile.me
+.ruby-gemset
+Procfile.me
 
