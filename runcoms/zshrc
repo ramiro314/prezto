@@ -140,6 +140,7 @@ function upstart-web () {
     function pre-start() {
         echo '--- Running Pre-Start ---'
         docker-compose -f docker-compose-dev.yaml up -d
+        rvm .
         bundle install
         gem install foreman
         foreman run ./docker/initialize_database_dev.sh
