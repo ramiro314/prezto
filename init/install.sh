@@ -55,10 +55,8 @@ brew install \
   bluetoothconnector \
   docker-compose \
   git \
-  nvm \
   pyenv \
   vim \
-  yarn
 
 cat << EOM
 ###############################################################################
@@ -68,9 +66,13 @@ EOM
 
 # Upstart requirements
 brew install \
+  awscli \
   exiftool \
   libpq \
-  postgresql@9.6
+  nvm \
+  openshift-cli \
+  postgresql@9.6 \
+  yarn
 brew link --force postgresql@9.6
 
 brew cask install \
