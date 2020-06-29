@@ -24,4 +24,5 @@ node_modules
 # Upstart Ruby Projects
 .ruby-gemset
 Procfile.me
+.rakeTasks
 
